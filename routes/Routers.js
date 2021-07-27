@@ -1,7 +1,7 @@
 var dataItem =require( '../data-Items')
 const Routers = (fastify,Options,done) =>
 {
-    fastify.get('/getItems',async (request,result)=>{
+    fastify.get('/getItems',(request,result)=>{
         result.code(200).send(dataItem);
     })
     fastify.post('/addItem',(request,result)=>{
